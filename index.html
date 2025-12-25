@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mantra Counter</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Mantra Counter</h1>
+        <p class="intro">Track your mantra repetitions with focus and calm 🙏</p>
+
+        <!-- Help -->
+        <button id="help-toggle">❓ Help</button>
+        <div id="help-content" class="hidden">
+            <ul>
+                <li>Set a daily target</li>
+                <li>Tap +1 for each mantra</li>
+                <li>Progress is auto-saved</li>
+                <li>Start a new session anytime</li>
+            </ul>
+        </div>
+
+        <!-- Theme -->
+        <button id="theme-btn">🌙 Dark Mode</button>
+
+        <!-- Target -->
+        <div class="target-section">
+            <label for="target">Target:</label>
+            <input type="number" id="target" min="1" value="108" />
+            <button id="set-target">Set</button>
+        </div>
+
+        <!-- Counter -->
+        <div class="counter-display">
+            <span id="count">0</span> / <span id="current-target">108</span>
+            <div class="progress-bar">
+                <div id="progress-fill"></div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <div class="buttons">
+            <button id="increment">+1</button>
+            <button id="decrement">-1</button>
+            <button id="reset">Reset</button>
+            <button id="new-session">New Session</button>
+        </div>
+
+        <!-- History -->
+        <button id="toggle-history">Toggle History</button>
+        <div id="history-list" class="hidden"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
